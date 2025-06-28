@@ -21,6 +21,7 @@ POLLEN_GRAIN/
 │       └── logout.html         # Logout/dummy exit
 ├── .venv/                      # Virtual environment (optional)
 └── README.md                   # Project documentation
+|__ pollen_grain_classification.ipynb # machine learning
 ```
 
 ---
@@ -58,7 +59,8 @@ http://127.0.0.1:5000/
 ```
 
 ---
-
+## 💻Result
+  [Drive Link](https://drive.google.com/drive/folders/1hHfkDFlwJLPdZzx1Tjl3V27fdfEIQA_A?usp=sharing)
 ## 📤 How It Works
 
 1. User uploads a pollen image via the web UI.
