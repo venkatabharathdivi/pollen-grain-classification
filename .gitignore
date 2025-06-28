@@ -1,0 +1,10 @@
+__pycache__/
+data/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+*.keras
+uploads/
+venv/

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollen Grain Classification</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <style>
+        a{
+            text-decoration: none
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-body-secondary">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html">Pollen Grain Classification</a>
+      <div>
+        <a class="navbar-item" href="#About">About</a>
+        <a class="navbar-item" href="#Contact">Contact</a>
+        <a class="navbar-item" href="#Prediction">Prediction</a>
+      </div>
+    </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" >
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{ url_for('static', filename='/nature.jpg') }}" class="d-block w-100" alt="Nature Image" style="height: 85vh;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Pollen Grain Prediction</h5>
+        <p>We assist researchers and scientists in the field of botany and plant sciences by providing interface for users to upload images of pollen grains and give predictions on the type of pollen present in the image</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='/oats.jpg') }}" class="d-block w-100" alt="Oats Image" style="height: 85vh;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Pollen Grain Prediction</h5>
+        <p>We assist researchers and scientists in the field of botany and plant sciences by providing interface for users to upload images of pollen grains and give predictions on the type of pollen present in the image</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='/meadow.jpg') }}" class="d-block w-100" alt="Meadow Image" style="height: 85vh;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Pollen Grain Prediction</h5>
+        <p>We assist researchers and scientists in the field of botany and plant sciences by providing interface for users to upload images of pollen grains and give predictions on the type of pollen present in the image</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div style="width: 100%;height: 20vh;" id="About">
+    <center><h1>About Us</h1></center>
+    <center><p>We are dedicated to advancing the field of pollen grain research through innovative technology and expert analysis.</p></center>
+</div>
+<div id="Contact" style="width: 100%;height: 20vh;">
+    <center><h1>Contact Us</h1></center>
+    <center><p>If you have any questions or inquiries, please reach out to us at bharathdivi79@gmail.com.</p></center>
+</div>
+<div id="Prediction" style="width: 100%;height: 20vh;">
+    <center><h1>Prediction</h1></center>
+    <center><button class="btn btn-primary" onclick="location.href='/prediction'">Click here to predict</button></center>
+</div>
+</body>
+</html>

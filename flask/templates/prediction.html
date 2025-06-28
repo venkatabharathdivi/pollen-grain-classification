@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <style>
+        a{
+            text-decoration: none
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-body-secondary">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="/">Pollen Grain Classification</a>
+      <div>
+        <a class="navbar-item" href="/">Home</a>
+        <a class="navbar-item" href="#About">About</a>
+        <a class="navbar-item" href="#Contact">Contact</a>
+      </div>
+    </div>
+    </nav>
+    <div class="text-light bm" style="background-image: url('/static/dandelion.jpg'); height: 92vh; background-position: center; background-size: cover;">
+        <h1 class="text-center mb-4">Upload Pollen Grain Image</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data" class="text-center mt-5">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit" class="btn btn-light mt-1">Predict</button>
+        </form>
+        <h2 class="text-center mt-4">The pollen grain type is : <span id="result">{{ prediction }}</span></h2>
+    </div>
+</body>
+</html>
